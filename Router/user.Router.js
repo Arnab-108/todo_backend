@@ -48,7 +48,7 @@ authRouter.post("/login",async(req,res)=>{
             res.status(400).send({msg:"Please provide an emailId and password!"})
         }
     } catch (error) {
-        res.status(400).send({err:error})
+        res.status(400).send({err:"A very bad request"})
     }
 })
 
